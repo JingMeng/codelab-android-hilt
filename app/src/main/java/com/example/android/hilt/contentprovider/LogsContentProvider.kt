@@ -47,6 +47,9 @@ private const val CODE_LOGS_ITEM = 2
  */
 class LogsContentProvider: ContentProvider() {
 
+    /**
+     * 在 DatabaseModule 这个模块有提供的   LogDao
+     */
     @InstallIn(SingletonComponent::class)
     @EntryPoint
     interface LogsContentProviderEntryPoint {
