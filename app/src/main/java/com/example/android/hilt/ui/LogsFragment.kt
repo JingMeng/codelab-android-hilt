@@ -36,10 +36,10 @@ import javax.inject.Inject
  * Fragment that displays the database logs.
  */
 @AndroidEntryPoint
-class LogsFragment : Fragment() {
+class LogsFragment : LogsBaseFragment() {
 
-    @InMemoryLogger
-    @Inject lateinit var logger: LoggerDataSource
+//    @InMemoryLogger
+//    @Inject lateinit var logger: LoggerDataSource
     @Inject lateinit var dateFormatter: DateFormatter
 
     private lateinit var recyclerView: RecyclerView
